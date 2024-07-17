@@ -72,7 +72,7 @@ class Speaker():
                     initiator_file.seek(0)
                     to_speak = initiator_file.read()
                     initiator_file.close()
-                if not to_speak == "A":
+                if not to_speak == "A" and to_speak == "B":
                     break
                 with open(self.__input_file_path, "a+") as data_file:
                     data_file.seek(0)

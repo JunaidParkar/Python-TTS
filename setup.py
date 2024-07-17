@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='ArtexTTS',
-    version='0.0.1',
+    version='0.0.2',
     author='Artex AI',
     description='A python text to speech library',
     long_description=open('README.md').read(),
@@ -22,4 +22,9 @@ setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.6',
+    project_urls={
+        'Documentation': 'https://github.com/JunaidParkar/Python-TTS',
+        'Source': 'https://github.com/JunaidParkar/Python-TTS',
+        'Tracker': 'https://github.com/JunaidParkar/Python-TTS',
+    },
 )
