@@ -10,7 +10,7 @@ This project leverages Selenium and `webdriver_manager` to utilize Chrome's buil
 
 ## Prerequisites
 
-- Selenium
+- `Selenium`
 - `webdriver_manager`
 
 ## Setup
