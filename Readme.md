@@ -1,6 +1,6 @@
 # Text to Speech (TTS) Project
 
-This project leverages Selenium and `webdriver_manager` to utilize Chrome's built-in text-to-speech feature. It's designed for simplicity and ease of use, allowing you to configure continuous text-to-speech functionality and optional English translation.
+This project leverages `pyttsx3` for microsoft's built-in text-to-speech feature. It's designed for simplicity and ease of use, allowing you to configure continuous text-to-speech functionality and optional English translation.
 
 ## Features
 
@@ -10,14 +10,13 @@ This project leverages Selenium and `webdriver_manager` to utilize Chrome's buil
 
 ## Prerequisites
 
-- `Selenium`
-- `webdriver_manager`
+- `pyttsx3`
 
 ## Setup
 
 1. **Install dependencies**:
     ```sh
-    pip install selenium webdriver_manager
+    pip install pyttsx3
     ```
 
 2. **Create Configuration Files**:
@@ -40,7 +39,11 @@ ai = Speaker(
     speak_continous=True | False
 )
 
-ai.speak()
+voices_list = ai.populate_voices() # to get list of available voices in your system
+
+ai.set_voice(voice_name) # voice name should be the exact name of voice provided in vlices_list
+
+ai.speak() # to speak sentences
 ```
 
 ## Parameters

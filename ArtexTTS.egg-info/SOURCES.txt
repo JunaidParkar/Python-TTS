@@ -3,7 +3,6 @@ MANIFEST.in
 README.md
 setup.cfg
 setup.py
-ArtexTTS/TTS.html
 ArtexTTS/TTS.py
 ArtexTTS/__init__.py
 ArtexTTS.egg-info/PKG-INFO

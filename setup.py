@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='ArtexTTS',
-    version='0.0.2',
+    version='0.0.5',
     author='Artex AI',
     description='A python text to speech library',
     long_description=open('README.md').read(),
@@ -11,10 +11,8 @@ setup(
     include_package_data=True,
     packages=find_packages(),
     install_requires=[
-        'selenium==4.22.0',
-        'webdriver_manager==4.0.1',
         'mtranslate==1.8',
-        'pathlib==1.0.1'
+        "pyttsx3==2.90"
     ],
     classifiers=[
         'Programming Language :: Python :: 3',

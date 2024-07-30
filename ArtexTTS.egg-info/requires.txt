@@ -1,4 +1,2 @@
-selenium==4.22.0
-webdriver_manager==4.0.1
 mtranslate==1.8
-pathlib==1.0.1
+pyttsx3==2.90
